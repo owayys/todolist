@@ -38,14 +38,6 @@ body {
     font-size: 22px;
 }
 
-ul {
-    list-style: none;
-    word-wrap: break-word;
-    padding-left: 0;
-    font-size: 24px;
-    line-height: 40px;
-}
-
 #container {
     height: 100%;
     padding: 0px 40px;
@@ -55,12 +47,12 @@ ul {
 
 #addItem {
     display: flex;
-    height: 35px;
+    height: auto;
     flex-direction: row;
     background-color: #04253F;
     border-color: #00F0F1;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -73,7 +65,7 @@ ul {
 }
 
 #list-Entry {
-    height: 30px;
+    height: 28px;
     width: 100%;
     background-color: #04253F;
     border-radius: 20px;
@@ -137,9 +129,9 @@ ul {
     margin-left: 5px;
 }
 
-@media screen and (max-width: 480px) {
-    #header {
-        text-align: center;
+@media screen and (max-width: 700px) {
+    #header#header {
+        text-align: center !important;
     }
     #container {
         padding: 0px 20px;
