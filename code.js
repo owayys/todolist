@@ -1,9 +1,11 @@
-function myList() {
+
 
     const textArea = document.getElementById("list-Entry")
+
+function myList() {
     const listElement = textArea.value;
 
-    emptyString = isEmptyOrSpaces(listElement)
+    emptyString = isEmpty(listElement)
 
     const ul = document.getElementById("list-1")
     
@@ -35,20 +37,20 @@ function myList() {
             taskCheck.innerHTML = `<i class="fas fa-check-circle"></i>`
             listEntry.style.textDecoration = "line-through"
             listEntry.style.color = "#00f1f170"
+            textArea.focus();
         })
 
         deleteTask.addEventListener("click", ()=>
         {
             newItem.remove();
+            textArea.focus();
         })
     }
 
     document.getElementById("list-Entry").value = "";
 }
 
-var input = document.getElementById("list-Entry");
-
-input.addEventListener("keypress", function(event) {
+textArea.addEventListener("keypress", function(event) {
 
     if (event.key === "Enter") {
 
@@ -71,6 +73,6 @@ function checkforItem(requiredText) {
     return found;
 }
 
-function isEmptyOrSpaces(str){
+function isEmpty(str){
     return str === null || str.match(/^ *$/) !== null;
 }
