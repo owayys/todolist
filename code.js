@@ -3,9 +3,13 @@ function myList() {
     const textArea = document.getElementById("list-Entry")
     const listElement = textArea.value;
 
+    if (listElement == "" || listElement.trim() == 0) {
+        emptyString = true
+    }
+
     const ul = document.getElementById("list-1")
     
-    if (!checkforItem(listElement)) {
+    if (!checkforItem(listElement) && !emptyString) {
         const itemList = document.getElementById("listDiv")
         const newItem = document.createElement("div");
         newItem.classList.add("item");
