@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #492700;
-    background-color: #7f79cc;
+    background-color: #ccb979;
     height: 100vh;
     width: 100vw;
 }
@@ -124,6 +124,9 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+    body {
+        color: #492700;
+    }
     #header {
         text-align: left;
     }
