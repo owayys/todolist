@@ -3,9 +3,7 @@ function myList() {
     const textArea = document.getElementById("list-Entry")
     const listElement = textArea.value;
 
-    if (listElement == "" || listElement.trim() == 0) {
-        emptyString = true
-    }
+    emptyString = isEmptyOrSpaces(listElement)
 
     const ul = document.getElementById("list-1")
     
@@ -71,4 +69,8 @@ function checkforItem(requiredText) {
         found = true;
     }
     return found;
+}
+
+function isEmptyOrSpaces(str){
+    return str === null || str.match(/^ *$/) !== null;
 }
