@@ -3,15 +3,12 @@ html, body {
     padding: 0;
 }
 
-/* border-color: #492700;
-    background-color: #ccb979; */
-
 body {
     font-family: 'Kantumruy Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    color: #492700;
-    background-color: #ccb979;
+    color: #00F0F1;
+    background-color: #04253F;
     height: 100vh;
     width: 100vw;
 }
@@ -19,7 +16,7 @@ body {
 #header {
     font-size: 45px;
     font-weight: 300;
-    padding: 30px 40px;
+    padding: 22px 40px;
 }
 
 #listDiv > div {
@@ -30,7 +27,7 @@ body {
 }
 
 .list-Button {
-    color: #492700;
+    color: #00F0F1;
     border-width: 1px;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -52,8 +49,8 @@ body {
     display: flex;
     height: 32px;
     flex-direction: row;
-    background-color: #ccb979;
-    border-color: #492700;
+    background-color: #04253F;
+    border-color: #00F0F1;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -68,29 +65,29 @@ body {
 }
 
 #list-Entry {
-    height: 30px;
+    height: auto;
     width: 100%;
-    background-color: #ccb979;
+    background-color: #04253F;
     border-radius: 20px;
     border: none;
     resize: none;
     outline: none;
-    caret-color: #492700;
-    color: #492700;
+    caret-color: #00F0F1;
+    color: #00F0F1;
     font-size: 18px;
     font-weight: 0;
 }
 
 ::placeholder {
-    color: #492700;
+    color: #00F0F1;
     opacity: 0.4;
     font-weight: 100;
   }
 
-  hr {
+hr {
+    color: #00F0F1;
     width: 95%;
-    color: #492700;
-  }
+}
 
 #button-1 {
     position: relative;
@@ -99,8 +96,8 @@ body {
     border: none;
     height: 95%;
     width: 40px;
-    color: #492700;
-    background-color: #ccb979;
+    color: #00F0F1;
+    background-color: #04253F;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -108,7 +105,7 @@ body {
 .item {
     display: flex;
     flex-direction: row;
-    color: #492700;
+    color: #00F0F1;
     word-wrap: break-word;
 }
 
@@ -120,7 +117,7 @@ body {
 }
 
 .taskCheck {
-    color: #492700;
+    color: #00F0F1;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -132,7 +129,7 @@ body {
 }
 
 .deleteTask {
-    color: #492700;
+    color: #00f1f194;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
