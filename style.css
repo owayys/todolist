@@ -3,12 +3,15 @@ html, body {
     padding: 0;
 }
 
+/* border-color: #492700;
+    background-color: #ccb979; */
+
 body {
     font-family: 'Kantumruy Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    color: #00F0F1;
-    background-color: #04253F;
+    color: #492700;
+    background-color: #ccb979;
     height: 100vh;
     width: 100vw;
 }
@@ -27,7 +30,7 @@ body {
 }
 
 .list-Button {
-    color: #00F0F1;
+    color: #492700;
     border-width: 1px;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -47,10 +50,10 @@ body {
 
 #addItem {
     display: flex;
-    height: auto;
+    height: 32px;
     flex-direction: row;
-    background-color: #04253F;
-    border-color: #00F0F1;
+    background-color: #ccb979;
+    border-color: #492700;
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -65,18 +68,29 @@ body {
 }
 
 #list-Entry {
-    height: 28px;
+    height: 30px;
     width: 100%;
-    background-color: #04253F;
+    background-color: #ccb979;
     border-radius: 20px;
     border: none;
     resize: none;
     outline: none;
-    caret-color: #00F0F1;
-    color: #00F0F1;
+    caret-color: #492700;
+    color: #492700;
     font-size: 18px;
     font-weight: 0;
 }
+
+::placeholder {
+    color: #492700;
+    opacity: 0.4;
+    font-weight: 100;
+  }
+
+  hr {
+    width: 95%;
+    color: #492700;
+  }
 
 #button-1 {
     position: relative;
@@ -85,8 +99,8 @@ body {
     border: none;
     height: 95%;
     width: 40px;
-    color: #00F0F1;
-    background-color: #04253F;
+    color: #492700;
+    background-color: #ccb979;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -94,7 +108,7 @@ body {
 .item {
     display: flex;
     flex-direction: row;
-    color: #00F0F1;
+    color: #492700;
     word-wrap: break-word;
 }
 
@@ -106,7 +120,7 @@ body {
 }
 
 .taskCheck {
-    color: #00F0F1;
+    color: #492700;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -118,7 +132,7 @@ body {
 }
 
 .deleteTask {
-    color: #00f1f194;
+    color: #492700;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -130,8 +144,9 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    #header#header {
-        text-align: center !important;
+    #header {
+        text-align: center;
+        padding: 12px 0px;
     }
     #container {
         padding: 0px 20px;
@@ -146,12 +161,12 @@ body {
         width: calc(100% - (2*(20px) + 2*(10px)));
     }
     .text {
-        font-size: 20px;
+        font-size: 23px;
     }
     .taskCheck {
-        font-size: 18px;
+        font-size: 20px;
     }
     .deleteTask {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
