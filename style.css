@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kantumruy Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* color: #00F0F1;
+    background-color: #04253F; */
+    color: #492700;
+    background-color: #ccb979;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 30px 40px;
+}
+
+#listDiv > div {
+    max-height: 80vh;
+    overflow: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.list-Button {
+    /* color: #00F0F1; */
+    color: #492700;
+    border-width: 1px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+    word-wrap: break-word;
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#container {
+    height: 100%;
+    padding: 0px 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+#addItem {
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    /* background-color: #04253F;
+    border-color: #00F0F1; */
+    border-color: #492700;
+    background-color: #ccb979;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    font-weight: 100;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - (2*(40px) + 2*(10px)));
+}
+
+#list-Entry {
+    height: 30px;
+    width: 100%;
+    /* background-color: #04253F; */
+    background-color: #ccb979;
+    border-radius: 20px;
+    border: none;
+    resize: none;
+    outline: none;
+    /* caret-color: #00F0F1;
+    color: #00F0F1; */
+    color: #492700;
+    caret-color: #492700;
+    font-size: 18px;
+    font-weight: 0;
+}
+
+#button-1 {
+    position: relative;
+    border-radius: 20px;
+    font-size: 18px;
+    border: none;
+    height: 95%;
+    width: 40px;
+    /* color: #00F0F1;
+    background-color: #04253F; */
+    color: #492700;
+    background-color: #ccb979;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    /* color: #00F0F1; */
+    color: #492700;
+    word-wrap: break-word;
+}
+
+.text {
+    width: auto;
+    font-size: 30px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.taskCheck {
+    /* color: #00F0F1; */
+    color: #492700;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.deleteTask {
+    /* color: #00f1f194; */
+    color: #492700;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        text-align: center;
+    }
+    #container {
+        padding: 0px 20px;
+    }
+    #addItem {
+        height: 35px;
+        font-size: 35px;
+        font-weight: 100;
+        vertical-align: middle;
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - (2*(20px) + 2*(10px)));
+    }
+    .text {
+        font-size: 20px;
+    }
+    .taskCheck {
+        font-size: 18px;
+    }
+    .deleteTask {
+        font-size: 14px;
+    }
+}
