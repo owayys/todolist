@@ -32,7 +32,7 @@ function myList() {
         {
             taskCheck.innerHTML = `<i class="fas fa-check-circle"></i>`
             listEntry.style.textDecoration = "line-through"
-            listEntry.style.color = "#4927005b"
+            listEntry.style.color = "#00f1f170"
         })
 
         deleteTask.addEventListener("click", ()=>
