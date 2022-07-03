@@ -7,8 +7,6 @@ body {
     font-family: 'Kantumruy Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    /* color: #00F0F1;
-    background-color: #04253F; */
     color: #492700;
     background-color: #ccb979;
     height: 100vh;
@@ -29,7 +27,6 @@ body {
 }
 
 .list-Button {
-    /* color: #00F0F1; */
     color: #492700;
     border-width: 1px;
     background-color: transparent;
@@ -60,8 +57,6 @@ ul {
     display: flex;
     height: 35px;
     flex-direction: row;
-    /* background-color: #04253F;
-    border-color: #00F0F1; */
     border-color: #492700;
     background-color: #ccb979;
     border-style: solid;
@@ -80,14 +75,11 @@ ul {
 #list-Entry {
     height: 30px;
     width: 100%;
-    /* background-color: #04253F; */
     background-color: #ccb979;
     border-radius: 20px;
     border: none;
     resize: none;
     outline: none;
-    /* caret-color: #00F0F1;
-    color: #00F0F1; */
     color: #492700;
     caret-color: #492700;
     font-size: 18px;
@@ -101,8 +93,6 @@ ul {
     border: none;
     height: 95%;
     width: 40px;
-    /* color: #00F0F1;
-    background-color: #04253F; */
     color: #492700;
     background-color: #ccb979;
     vertical-align: middle;
@@ -112,7 +102,6 @@ ul {
 .item {
     display: flex;
     flex-direction: row;
-    /* color: #00F0F1; */
     color: #492700;
     word-wrap: break-word;
 }
@@ -125,7 +114,6 @@ ul {
 }
 
 .taskCheck {
-    /* color: #00F0F1; */
     color: #492700;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -138,7 +126,6 @@ ul {
 }
 
 .deleteTask {
-    /* color: #00f1f194; */
     color: #492700;
     background-color: transparent;
     background-repeat: no-repeat;
