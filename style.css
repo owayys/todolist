@@ -87,6 +87,7 @@ body {
 hr {
     color: #00F0F1;
     width: 95%;
+    margin-bottom: 20px;
 }
 
 #button-1 {
@@ -142,6 +143,7 @@ hr {
 
 @media screen and (max-width: 700px) {
     #header {
+        font-size: 35px;
         text-align: center;
         padding: 12px 0px;
     }
