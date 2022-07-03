@@ -17,6 +17,7 @@ body {
     font-size: 45px;
     font-weight: 300;
     padding: 30px 40px;
+    text-align: center;
 }
 
 .list-Button {
@@ -33,7 +34,7 @@ body {
 
 #container {
     height: 100%;
-    padding: 0px 40px;
+    padding: 0px 20px;
     position: relative;
     overflow: hidden;
 }
@@ -53,8 +54,8 @@ body {
     font-weight: 100;
     vertical-align: middle;
     position: absolute;
-    bottom: 40px;
-    width: calc(100% - (2*(40px) + 2*(10px)));
+    bottom: 20px;
+    width: calc(100% - (2*(20px) + 2*(10px)));
 }
 
 #list-Entry {
@@ -93,7 +94,7 @@ body {
 
 .text {
     width: auto;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     word-wrap: break-word;
 }
@@ -106,7 +107,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 5px;
 }
 
@@ -118,33 +119,28 @@ body {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 5px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
     #header {
-        text-align: center;
+        text-align: left;
     }
     #container {
-        padding: 0px 20px;
+        padding: 0px 40px;
     }
     #addItem {
-        height: 35px;
-        font-size: 35px;
-        font-weight: 100;
-        vertical-align: middle;
-        position: absolute;
-        bottom: 20px;
-        width: calc(100% - (2*(20px) + 2*(10px)));
+        bottom: 40px;
+        width: calc(100% - (2*(40px) + 2*(10px)));
     }
     .text {
-        font-size: 20px;
+        font-size: 30px;
     }
     .taskCheck {
-        font-size: 18px;
+        font-size: 22px;
     }
     .deleteTask {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
