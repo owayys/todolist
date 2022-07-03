@@ -7,8 +7,8 @@ body {
     font-family: 'Kantumruy Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    color: #492700;
-    background-color: #ccb979;
+    color: #00F0F1;
+    background-color: #04253F;
     height: 100vh;
     width: 100vw;
 }
@@ -17,11 +17,17 @@ body {
     font-size: 45px;
     font-weight: 300;
     padding: 30px 40px;
-    text-align: center;
+}
+
+#listDiv > div {
+    max-height: 80vh;
+    overflow: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .list-Button {
-    color: #492700;
+    color: #00F0F1;
     border-width: 1px;
     background-color: transparent;
     background-repeat: no-repeat;
@@ -32,9 +38,17 @@ body {
     font-size: 22px;
 }
 
+ul {
+    list-style: none;
+    word-wrap: break-word;
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 40px;
+}
+
 #container {
     height: 100%;
-    padding: 0px 20px;
+    padding: 0px 40px;
     position: relative;
     overflow: hidden;
 }
@@ -43,8 +57,8 @@ body {
     display: flex;
     height: 35px;
     flex-direction: row;
-    border-color: #492700;
-    background-color: #ccb979;
+    background-color: #04253F;
+    border-color: #00F0F1;
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
@@ -54,20 +68,20 @@ body {
     font-weight: 100;
     vertical-align: middle;
     position: absolute;
-    bottom: 20px;
-    width: calc(100% - (2*(20px) + 2*(10px)));
+    bottom: 40px;
+    width: calc(100% - (2*(40px) + 2*(10px)));
 }
 
 #list-Entry {
     height: 30px;
     width: 100%;
-    background-color: #ccb979;
+    background-color: #04253F;
     border-radius: 20px;
     border: none;
     resize: none;
     outline: none;
-    color: #492700;
-    caret-color: #492700;
+    caret-color: #00F0F1;
+    color: #00F0F1;
     font-size: 18px;
     font-weight: 0;
 }
@@ -79,8 +93,8 @@ body {
     border: none;
     height: 95%;
     width: 40px;
-    color: #492700;
-    background-color: #ccb979;
+    color: #00F0F1;
+    background-color: #04253F;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -88,19 +102,31 @@ body {
 .item {
     display: flex;
     flex-direction: row;
-    color: #492700;
+    color: #00F0F1;
     word-wrap: break-word;
 }
 
 .text {
     width: auto;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     word-wrap: break-word;
 }
 
 .taskCheck {
-    color: #492700;
+    color: #00F0F1;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.deleteTask {
+    color: #00f1f194;
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -108,42 +134,32 @@ body {
     overflow: hidden;
     outline: none;
     font-size: 18px;
-    margin-right: 5px;
-}
-
-.deleteTask {
-    color: #492700;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    font-size: 14px;
     margin-left: 5px;
 }
 
-@media screen and (min-width: 700px) {
-    body {
-        color: #492700;
-    }
+@media screen and (max-width: 480px) {
     #header {
-        text-align: left;
+        text-align: center;
     }
     #container {
-        padding: 0px 40px;
+        padding: 0px 20px;
     }
     #addItem {
-        bottom: 40px;
-        width: calc(100% - (2*(40px) + 2*(10px)));
+        height: 35px;
+        font-size: 35px;
+        font-weight: 100;
+        vertical-align: middle;
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - (2*(20px) + 2*(10px)));
     }
     .text {
-        font-size: 30px;
+        font-size: 20px;
     }
     .taskCheck {
-        font-size: 22px;
+        font-size: 18px;
     }
     .deleteTask {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
