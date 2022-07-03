@@ -85,7 +85,7 @@ body {
   }
 
 hr {
-    color: #00F0F1;
+    border-color: #00F0F1;
     width: 95%;
     margin-bottom: 20px;
     outline: none;
